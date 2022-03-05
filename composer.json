@@ -1,0 +1,42 @@
+{
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "config": {
+    "bin-dir": "./vendor/bin/",
+    "process-timeout": 0,
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true
+    }
+  },
+  "description": "",
+  "homepage": "https://www.example.com",
+  "keywords": [
+    "gaming"
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "express-gym/schoolyardrecycling",
+  "prefer-stable": true,
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "ext-pcntl": "*",
+    "ext-pdo": "*",
+    "ext-posix": "*",
+    "ext-readline": "*",
+    "php": "7.4.*",
+    "ext-sockets": "*",
+    "richardtmiles/carbonphp": "10.8.*"
+  },
+  "require-dev": {
+    "composer/composer": "^2.1.9",
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "9.5.*"
+  },
+  "scripts": {
+  }
+}
