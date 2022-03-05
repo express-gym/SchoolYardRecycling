@@ -1,6 +1,7 @@
 {
   "autoload": {
     "psr-4": {
+      "Recycling\\": "server/"
     }
   },
   "config": {
@@ -38,5 +39,10 @@
     "phpunit/phpunit": "9.5.*"
   },
   "scripts": {
+    "db": [
+      "php index.php setup --cnf",
+      "php index.php buildDatabase -r"
+    ],
+    "rest": "php index.php restbuilder -json -dumpData -target server"
   }
 }
