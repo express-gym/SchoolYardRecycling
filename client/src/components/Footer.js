@@ -79,7 +79,7 @@ const Footer = () => (
         </Grid>
 
         <Divider inverted section />
-        <Image centered size="small" src="./images/logo.png" />
+        <Image centered size="small" src="./images/orangeLogo.png" />
         <List horizontal inverted divided link size="small">
           <List.Item as="a" href="#">
             Site Map

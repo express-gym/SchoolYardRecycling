@@ -1,71 +1,87 @@
-import React, { Component } from "react";
-import RandomFacts from "../components/RandomFacts";
-import facts from "./FactsDB";
-import { Container } from "semantic-ui-react";
-import homeImage from "./assets/hangingpots.jpeg";
-import "../App.css";
+import * as React from "react";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { Button } from "semantic-ui-react";
 
-export default class DonateItems extends Component {
-  state = {
-    fact: facts[0].fact,
-  };
-
-  generateRandomFact = (arr) => {
-    let num = Math.floor(Math.random() * facts.length);
-
-    let newFact = facts[num];
-
-    this.setState({
-      fact: newFact.fact,
-    });
-
-    this.shuffleFacts(facts);
-  };
-
-  shuffleFacts = (arr) => {
-    return arr.sort(function () {
-      return 0.5 - Math.random();
-    });
-  };
-
-  render() {
-    return (
-      <Container fluid>
-        <div
-          className="container"
-          style={{
-            backgroundImage: `url(${homeImage})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            minWidth: "100vw",
-            minHeight: "100vh",
-          }}
+export default function TitlebarBelowImageList() {
+  return (
+    <>
+      <div
+        style={{
+          padding: "3rem",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Button
+          href="/Donate"
+          size="large"
+          style={{ backgroundColor: "#F19351" }}
         >
-          <div style={{ backgroundColor: "white" }}>
-            <h1
-              className="text-center"
-              style={{
-                textAlign: "center",
-                alignContent: "center",
-                fontFamily: "Oswald, sans-serif",
-                marginLeft: "20px",
-                // marginTop: "80px",
-              }}
-            >
-              Random Plant Fact
-            </h1>
-            <RandomFacts
-              style={{ marginLeft: "20px", backgroundColor: "white" }}
-              generateRandomFact={this.generateRandomFact}
-              fact={this.state}
-            />
-          </div>
-        </div>
-      </Container>
-    );
-  }
+          Things You Can Donate
+        </Button>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <ImageList style={{ width: "80%", height: "100%" }} cols={4} gap={20}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 4x`}
+                alt={item.title}
+                loading="lazy"
+              />
+              <ImageListItemBar
+                title={item.title}
+                //   subtitle={<span>by: {item.author}</span>}
+                position="below"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </div>
+    </>
+  );
 }
+
+const itemData = [
+  {
+    img: "./images/furniture.png",
+    title: "Furniture",
+  },
+  {
+    img: "./images/smallappliances.png",
+    title: "Small Appliances",
+  },
+  {
+    img: "./images/metals.png",
+    title: "Metal Pieces",
+  },
+  {
+    img: "./images/glassbottles.png",
+    title: "Glass",
+  },
+  {
+    img: "./images/largeappliances.png",
+    title: "Large Appliances",
+  },
+  {
+    img: "./images/wood.png",
+    title: "Wood",
+  },
+  {
+    img: "./images/plastic.png",
+    title: "Plastic",
+  },
+  {
+    img: "./images/otherpaper.png",
+    title: "Paper",
+  },
+];

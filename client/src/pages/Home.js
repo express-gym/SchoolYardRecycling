@@ -29,52 +29,57 @@ const Home = () => (
       <Grid.Row>
         <Grid.Column width={8}>
           <Header as="h3" style={{ fontSize: "2em" }}>
-            Five Tip & Tricks for your house plants!
+            Five interesting facts about recycling!
           </Header>
           <p style={{ fontSize: "1.33em" }}>
-            Spin your plants around so they grow evenly and not lopsided. Every
-            week.
+            The United States annually recycles enough iron and steel scrap
+            metals (known as ferrous scrap), by weight, to build more than 900
+            Golden Gate Bridges — a bridge stretching nearly 9,000 feet.
           </p>
           <p style={{ fontSize: "1.33em" }}>
-            Don’t fertilize in the winter. Only in the spring and summer.
+            More than 52 million tons of paper products were recycled in 2018.
+            That’s roughly the same weight as almost 350,000 blue whales.
           </p>
           <p style={{ fontSize: "1.33em" }}>
-            Use pots with holes in them. Very helpful and necessary if you are a
-            gardening newbie.
+            Recycling one aluminum can saves enough energy to run a 55-inch HDTV
+            to watch your favorite movie. If we recycled all of the aluminum
+            cans in the U.S., the energy saved could power 4.1 million homes for
+            a full year.
           </p>
           <p style={{ fontSize: "1.33em" }}>
-            Try taking your houseplants outside for the summer and grow them in
-            the shade. It is amazing how much they grow!
+            Recycling helps save energy. If you recycle one glass bottle, it
+            saves enough energy to light a 100-watt bulb for four hours, power a
+            computer for 30 minutes, or a television for 20 minutes.
           </p>
           <p style={{ fontSize: "1.33em" }}>
-            If you are prone to giving to watering too much, buy a moisture
-            meter. It will help you learn how much water your plant needs.
+            Cardboard (also known as corrugated) boxes can be recycled at least
+            seven times and can be used to make new packaging boxes and even
+            furniture.
           </p>
         </Grid.Column>
         <Grid.Column floated="right" width={6}>
-          <Image
-            bordered
-            rounded
-            size="large"
-            src="/images/dogwithplant.jpeg"
-          />
+          <Image bordered rounded size="large" src="/images/Trashbin.png" />
         </Grid.Column>
       </Grid.Row>
     </Grid>
-    <Container text style={{ marginBottom: "80px" }}>
-      <Header as="h3" style={{ fontSize: "2em" }}>
-        Did you Know?
-      </Header>
-      <p style={{ fontSize: "1.33em" }}>
-        If your potted houseplants dry out too quickly after watering, try this
-        simple trick for keeping the soil moist longer. When repotting, tuck a
-        damp sponge into the bottom of the pot before filling with soil. It will
-        act as a water reservoir and may help prevent a gusher if you
-        accidentally overwater.
-      </p>
-      <Button href="/PlantFacts" size="large">
-        Read More About Plant Facts!
-      </Button>
+    <Image
+      // className="homeimg"
+      style={{
+        float: "right",
+        width: "70%",
+        paddingRight: "10rem",
+        borderRadius: "none",
+      }}
+      src="/images/dropofflocation.png"
+      alt={"hanging flower pots"}
+    />
+    <Container text style={{ paddingTop: "8rem", marginBottom: "80px" }}>
+      <Image
+        // className="homeimg"
+        style={{ borderRadius: "none" }}
+        src="/images/boxesMap.png"
+        alt={"hanging flower pots"}
+      />
     </Container>
     <Grid celled="internally" columns="equal" stackable>
       <Grid.Row textAlign="center">
@@ -99,7 +104,9 @@ const Home = () => (
         href="/MyGarden"
         style={{ marginTop: "30px" }}
       >
-        <Button size="huge">Check Out Your Garden</Button>
+        <Button href="/Donate" size="large">
+          Read More About What You Can Donate!
+        </Button>
       </Grid.Column>
     </Grid>
   </Segment>
