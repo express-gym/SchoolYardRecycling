@@ -291,16 +291,16 @@
         },
         {
             "name": "richardtmiles/carbonphp",
-            "version": "10.8.5",
+            "version": "10.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RichardTMiles/CarbonPHP.git",
-                "reference": "f6ae09618fff42185f140fe275b2891699f29234"
+                "reference": "2bc563fa95006e4ea74eae84d0e6c214224dde94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RichardTMiles/CarbonPHP/zipball/f6ae09618fff42185f140fe275b2891699f29234",
-                "reference": "f6ae09618fff42185f140fe275b2891699f29234",
+                "url": "https://api.github.com/repos/RichardTMiles/CarbonPHP/zipball/2bc563fa95006e4ea74eae84d0e6c214224dde94",
+                "reference": "2bc563fa95006e4ea74eae84d0e6c214224dde94",
                 "shasum": ""
             },
             "require": {
@@ -364,9 +364,9 @@
             ],
             "support": {
                 "issues": "https://github.com/RichardTMiles/CarbonPHP/issues",
-                "source": "https://github.com/RichardTMiles/CarbonPHP/tree/10.8.5"
+                "source": "https://github.com/RichardTMiles/CarbonPHP/tree/10.8.6"
             },
-            "time": "2022-03-04T23:03:39+00:00"
+            "time": "2022-03-05T19:11:19+00:00"
         }
     ],
     "packages-dev": [
@@ -1825,16 +1825,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.16",
+            "version": "9.5.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "5ff8c545a50226c569310a35f4fa89d79f1ddfdc"
+                "reference": "5c5abcfaa2cbd44b2203995d7a339ef910fe0c8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5ff8c545a50226c569310a35f4fa89d79f1ddfdc",
-                "reference": "5ff8c545a50226c569310a35f4fa89d79f1ddfdc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5c5abcfaa2cbd44b2203995d7a339ef910fe0c8f",
+                "reference": "5c5abcfaa2cbd44b2203995d7a339ef910fe0c8f",
                 "shasum": ""
             },
             "require": {
@@ -1912,7 +1912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.16"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.17"
             },
             "funding": [
                 {
@@ -1924,7 +1924,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-23T17:10:58+00:00"
+            "time": "2022-03-05T16:54:31+00:00"
         },
         {
             "name": "psr/container",
@@ -2056,12 +2056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "4313a9e543ec4c7970852176800a614efd63f8c4"
+                "reference": "6c48c3048166dc4142a1a5f28a325faed3a578a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4313a9e543ec4c7970852176800a614efd63f8c4",
-                "reference": "4313a9e543ec4c7970852176800a614efd63f8c4",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6c48c3048166dc4142a1a5f28a325faed3a578a3",
+                "reference": "6c48c3048166dc4142a1a5f28a325faed3a578a3",
                 "shasum": ""
             },
             "conflict": {
@@ -2505,7 +2505,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-04T15:04:26+00:00"
+            "time": "2022-03-05T18:49:45+00:00"
         },
         {
             "name": "sebastian/cli-parser",
