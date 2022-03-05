@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, {Component} from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 
@@ -6,10 +7,9 @@ import Qs from "qs";
 import axios, {AxiosInstance} from "axios";
 import { setupCache } from 'axios-cache-adapter'
 
-import PageNotFound from 'PageNotFound';
+
 // This is our ajax class
 import {CodeBlock, dracula, googlecode} from 'react-code-blocks';
-import WebGl from "./WebGl";
 
 export interface iCustomRoute {
     component?: any,
@@ -246,7 +246,7 @@ class bootstrap extends Component<any, {
                     render={props => this.passPropertiesAndRender(prop.component, {...prop, ...rest, ...props})}
                     key={key}/>;
             })}
-            <Route component={PageNotFound}/>
+            <Route component={<h1>Page Not Found!</h1>}/>
         </Switch>
     };
 
@@ -476,7 +476,7 @@ class bootstrap extends Component<any, {
             {
                 path: "/WebGl",
                 name: "Example List",
-                component: WebGl
+                component: <><h1>Drift away</h1></>
             },
             {
                 path: "/",
