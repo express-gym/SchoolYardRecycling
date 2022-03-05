@@ -24,8 +24,8 @@ body {
   padding-top: 6vh;
 }
 #addPlantHead {
-    font-size: 2em;
-    padding-top: 10px;
+  font-size: 2em;
+  padding-top: 10px;
 }
 #ContactPar {
   font-size: 2.84em;
@@ -35,7 +35,7 @@ body {
   padding: 10vh;
 }
 .Router {
-  background-color: rgba(229, 255, 0, 0.404);
+  background-color: #f19351;
   padding: 1.5rem 2rem 35px 2rem;
   min-height: 100%;
 }
@@ -59,10 +59,11 @@ body {
   min-height: calc(100vh - 20px) !important;
 }
 .header {
-  color: #647f4d !important;
+  color: #f19351 !important;
 }
 Nav {
   background-color: rebeccapurple !important;
+  background: #f19351;
 }
 .cards {
   padding-top: 25px;
@@ -72,7 +73,7 @@ Nav {
   /*min-height: 100vw;*/
 }
 .team-container {
-  background-color: #4f5902;
+  background-color: #f19351;
 }
 #plant-card {
   background-color: #ebdbae;
@@ -111,12 +112,10 @@ Nav {
   background-color: #4f5902;
 }
 
-.contact-container{
-    background-image: url(./pages/assets/best-aesthetic-plants.jpeg);
-    padding-bottom: 50vh;
+.contact-container {
+  background-image: url(./pages/assets/best-aesthetic-plants.jpeg);
+  padding-bottom: 50vh;
 }
-.addplantbtn{
-    background-color: #EBDBAE;
+.addplantbtn {
+  background-color: #ebdbae;
 }
-
-

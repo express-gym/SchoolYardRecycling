@@ -1,5 +1,5 @@
 import React from "react";
-import homeImage from "./assets/hangingpots.jpeg";
+import homeImage from "./assets/teacherTools.png";
 import "../App.css";
 import {
   Button,
@@ -9,10 +9,16 @@ import {
   Image,
   Segment,
 } from "semantic-ui-react";
+import { borderRadius } from "@mui/system";
 
 const Home = () => (
   <Segment style={{ padding: "0em 0em 5em" }} vertical>
-    <Image className="homeimg" src={homeImage} alt={"hanging flower pots"} />
+    <Image
+      className="homeimg"
+      style={{ borderRadius: "none" }}
+      src={homeImage}
+      alt={"hanging flower pots"}
+    />
 
     <Grid
       container
