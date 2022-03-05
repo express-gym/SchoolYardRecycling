@@ -91,7 +91,11 @@ const Nav = () => {
                 component="div"
                 sx={{ display: { xs: "none", md: "flex" } }}
               >
-                <img id="logo" src="./images/logo.png" alt="Planthub Logo" />
+                <img
+                  id="logo"
+                  src="./images/whiteLogo.png"
+                  alt="SchoolYard Recycling Logo"
+                />
               </Typography>
             </Link>
 
@@ -142,7 +146,11 @@ const Nav = () => {
               }}
             >
               <Link to="/">
-                <img id="logo" src="./images/logo.png" alt="Planthub Logo" />
+                <img
+                  id="logo"
+                  src="./images/whiteLogo.png"
+                  alt="Planthub Logo"
+                />
               </Link>
             </Typography>
             <Box
